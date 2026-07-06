@@ -1,0 +1,14 @@
+.DS_Store
+node_modules
+.next
+.turbo
+dist
+coverage
+*.tsbuildinfo
+.env
+.env.local
+.venv
+__pycache__
+.pytest_cache
+*.pyc
+*.sqlite3

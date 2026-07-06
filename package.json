@@ -1,0 +1,12 @@
+{
+  "name": "cashflow-os-mvp",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev:web": "pnpm --dir apps/web dev",
+    "build:web": "pnpm --dir apps/web build",
+    "typecheck:web": "pnpm --dir apps/web typecheck",
+    "dev:api": "cd services/api && uv run uvicorn app.main:app --reload --host 127.0.0.1 --port 8000",
+    "test:api": "cd services/api && uv run pytest"
+  }
+}

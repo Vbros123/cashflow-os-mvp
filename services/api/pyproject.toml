@@ -1,0 +1,23 @@
+[project]
+name = "cashflow-os-api"
+version = "0.1.0"
+description = "FastAPI backend for the Cashflow OS MVP."
+requires-python = ">=3.11"
+dependencies = [
+  "fastapi>=0.115.0",
+  "uvicorn[standard]>=0.30.0",
+  "pydantic>=2.8.0",
+  "pydantic-settings>=2.4.0",
+  "pandas>=2.2.0",
+  "python-dateutil>=2.9.0",
+  "httpx>=0.27.0",
+]
+
+[dependency-groups]
+dev = [
+  "pytest>=8.2.0",
+]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
